@@ -1,15 +1,15 @@
 def nyc_pigeon_organizer(data)
   attributeindex = 0
   attributes = []
-  output = Hash.new
+  birblist = Hash.new
   #this while loop populates a hash with all the names as keys pointing to empty hashes and accumulates all the attribute names (i.e. colors, gender, lives) in an array
   while attributeindex < data.length do
-    data.values[attributeindex].map{|k,v| v.map{|birb| output[birb] = {}}}
+    data.values[attributeindex].map{|k,v| v.map{|birb| birblist[birb] = {}}}
     attributes << data.keys[attributeindex]
     attributeindex+=1
   end
   stathash = Hash(attributes.map{|stat| [stat, []]})
-  output.map{|k,v| v = stathash}
-  
-  return output
+  birbstats = birblist.map{|k,v| v = stathash}
+  birbstats.map{|birb,stats| 
+  return 
 end
