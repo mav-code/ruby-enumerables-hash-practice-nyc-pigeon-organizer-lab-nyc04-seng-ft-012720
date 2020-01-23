@@ -5,7 +5,7 @@ def nyc_pigeon_organizer(data)
   while attributeindex < data.length do
     
     
-    data[attributeindex].map{|k,v| attributes << k;
+    data.value[attributeindex].map{|k,v| attributes << k;
     v.map{|k,v| output[v] = []}}
     
   
