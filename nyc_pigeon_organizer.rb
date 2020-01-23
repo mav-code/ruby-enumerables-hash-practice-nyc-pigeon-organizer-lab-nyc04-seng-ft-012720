@@ -8,6 +8,6 @@ def nyc_pigeon_organizer(data)
     attributes << data.keys[attributeindex]
     attributeindex+=1
   end
-  output.map{|birb,stats| 
+  attributes.reduce
   return output
 end
