@@ -1,3 +1,10 @@
 def nyc_pigeon_organizer(data)
-  # write your code here!
+  atrributeindex = 0
+  output = Hash.new
+  while atrributeindex < data.length do
+    data[attributeindex].map{|
+    
+  
+  
+  end
 end
