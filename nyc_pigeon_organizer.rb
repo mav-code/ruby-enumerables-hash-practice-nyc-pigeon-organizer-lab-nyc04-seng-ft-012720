@@ -8,6 +8,6 @@ def nyc_pigeon_organizer(data)
     attributes << data.keys[attributeindex]
     attributeindex+=1
   end
-  attributes.reduce
+  attributes.reduce{|a,b|=> (a[b]=,a),{}}
   return output
 end
