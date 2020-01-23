@@ -8,7 +8,7 @@ def nyc_pigeon_organizer(data)
     attributes << data.keys[attributeindex]
     attributeindex+=1
   end
-  stathash = Hash(attributes.map{|stat| [stat, []]})
+  stathash = Hash[attributes.map{|stat| [stat, []]}]
   birbstats = birblist.map{|k,v| v = stathash}
   output = data.map{|stat,value| value.map{|k,name| birbstats[name][stat] << k}}
   return output
