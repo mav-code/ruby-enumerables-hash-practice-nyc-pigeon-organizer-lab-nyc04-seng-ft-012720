@@ -8,7 +8,8 @@ def nyc_pigeon_organizer(data)
     attributes << data.keys[attributeindex]
     attributeindex+=1
   end
-  stathash = Hash(attributes.map{|stat| [stat, ]
-  attributes.reduce{|a,b|=> (a[b]=,a),{}}
+  stathash = Hash(attributes.map{|stat| [stat, []]})
+  output.map{|k,v| v = stathash}
+  
   return output
 end
