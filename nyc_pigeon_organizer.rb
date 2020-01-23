@@ -3,10 +3,7 @@ def nyc_pigeon_organizer(data)
   attributes =[]
   output = Hash.new
   while attributeindex < data.length do
-    
-    
-    data.value[attributeindex].map{|k,v| attributes << k;
-    v.map{|k,v| output[v] = []}}
+    data.value[attributeindex].map{|k,v| output[v] = []}}
     
   
     attributeindex+=1
